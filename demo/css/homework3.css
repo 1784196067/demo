@@ -1,0 +1,37 @@
+.jobList > li {
+    font-size: 16px;
+    line-height: 40px;
+    /*font-weight: bold;*/
+    position: relative;
+}
+
+.jobList > li:nth-of-type(odd):after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #888;
+    border-right: 1px solid #888;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 25%;
+    right: 0;
+}
+
+.jobList > li:nth-of-type(odd).activated:after {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.jobList > li:nth-of-type(even) {
+    display: none;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.jobList .jobList > li:nth-of-type(even) {
+    display: none;
+    padding-left: 30px;
+    font-size: 15px;
+}

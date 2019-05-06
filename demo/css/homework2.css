@@ -1,0 +1,94 @@
+p{
+    margin: 0px 0px 10px;
+}
+span,img{
+    vertical-align: middle;
+}
+.sportsModule{
+    width:600px;
+    margin:auto;
+    font-size: 16px;
+    padding: 0px 20px 20px;
+    background-color: white;
+    /*overflow: auto;*/
+}
+.sportsModuleTop{
+    line-height: 40px;
+}
+.sportsModuleTop > img{
+    height: 14px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.sportsModuleTop > span:last-of-type{
+    font-size: 14px;
+    color: #888;
+}
+.sportsModuleMain:after{
+    content: ' ';
+    display: table;
+    clear: both;
+}
+.sportsModuleMain > div{
+    height: 200px;
+    padding: 15px;
+    background-image: url("images/cgfy.png");
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-color: #648877;
+    position: relative;
+}
+.sportsModuleMain span{
+    width: 10px;
+    display: inline-block;
+    height: 10px;
+    left: 2%;
+    top: 50%;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    margin-top: 20px;
+    position: relative;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(45deg);
+}
+.sportsModuleMain span:after{
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    top: -125%;
+    left: -80%;
+    /* margin-top: -15px; */
+    border-radius: 50%;
+
+}
+.sportsModuleMain > div:first-of-type{
+    margin-bottom: 10px;
+}
+.sportsModuleMain > div:nth-of-type(2){
+    background-color: rgba(114, 28, 136, 0.09);
+    float: left;
+}
+.sportsModuleMain > div:last-of-type{
+    background-color: rgba(72, 136, 51, 0.2);
+    float: right;
+}
+.sportsModuleMain > div:not(:first-of-type){
+    width: 49%;
+    height: 150px;
+    box-sizing: border-box;
+}
+.sportsModuleMain p:nth-child(2){
+    font-weight: bold;
+    font-size: 14px;
+    color: cadetblue;
+}
